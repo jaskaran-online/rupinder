@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Example</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/25lzf36NZW1
+-->
+
+<div class="flex flex-col min-h-[100dvh]">
+  <header class="px-4 lg:px-6 h-14 flex items-center bg-gradient-to-r from-[#4776E6] to-[#8E54E9] text-white">
+    <a class="flex items-center justify-center" href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-6 w-6"
+      >
+        <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+      </svg>
+      <span class="sr-only">John Doe's Portfolio</span>
+    </a>
+    <nav class="ml-auto flex gap-4 sm:gap-6">
+      <a href="#" class="text-sm font-medium hover:underline underline-offset-4">
+        Projects
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        Skills
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+        Contact
+      </a>
+    </nav>
+  </header>
+  <main class="flex-1">
+    <section class="w-full pt-12 md:pt-24 lg:pt-32 border-y bg-gradient-to-r from-[#4776E6] to-[#8E54E9] text-white">
+      <div class="container space-y-10 xl:space-y-16 px-4 md:px-6">
+        <div class="grid gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
+          <div>
+            <h1 class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem] animate-bounce">
+              John Doe
+            </h1>
+            <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl animate-pulse">
+              Fullstack Developer
+            </h2>
+            <p class="mt-4 text-gray-200 md:text-xl dark:text-gray-400 animate-fadeIn">
+              I'm a passionate fullstack developer with expertise in building modern web applications. I love
+              creating innovative solutions that solve real-world problems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container space-y-12 px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl animate-fadeIn">Featured Projects</h2>
+            <p class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 animate-fadeIn">
+              Check out some of my recent work.
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
+          <div class="group rounded-lg bg-white shadow-md transition-all hover:shadow-lg dark:bg-gray-950 dark:text-gray-50 dark:hover:bg-gray-800 animate-fadeInUp">
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="310"
+              alt="Project 1"
+              class="aspect-video w-full rounded-t-lg object-cover object-center"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold">Project 1</h3>
+              <p class="mt-2 text-gray-500 dark:text-gray-400">
+                A web application that helps users manage their tasks more efficiently.
+              </p>
+            </div>
+          </div>
+          <div class="group rounded-lg bg-white shadow-md transition-all hover:shadow-lg dark:bg-gray-950 dark:text-gray-50 dark:hover:bg-gray-800 animate-fadeInUp">
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="310"
+              alt="Project 2"
+              class="aspect-video w-full rounded-t-lg object-cover object-center"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold">Project 2</h3>
+              <p class="mt-2 text-gray-500 dark:text-gray-400">
+                A mobile app that helps users track their fitness activities.
+              </p>
+            </div>
+          </div>
+          <div class="group rounded-lg bg-white shadow-md transition-all hover:shadow-lg dark:bg-gray-950 dark:text-gray-50 dark:hover:bg-gray-800 animate-fadeInUp">
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="310"
+              alt="Project 3"
+              style=""
+              class="aspect-video w-full rounded-t-lg object-cover object-center"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold">Project 3</h3>
+              <p class="mt-2 text-gray-500 dark:text-gray-400">
+                A web application that helps users manage their personal finances.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#4776E6] to-[#8E54E9] text-white">
+      <div class="container space-y-12 px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl animate-fadeIn">Skills</h2>
+            <p class="max-w-[900px] text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 animate-fadeIn">
+              Here are some of the technologies I'm proficient in.
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto grid max-w-5xl grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+          <div class="flex flex-col items-center justify-center space-y-2 animate-flipInX">
+            <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-10 w-10 text-[#4776E6]"
+              >
+                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                <line x1="12" x2="12" y1="22" y2="15.5"></line>
+                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                <line x1="12" x2="12" y1="2" y2="8.5"></line>
+              </svg>
+            </div>
+            <p class="text-sm font-medium">React</p>
+          </div>
+          <div class="flex flex-col items-center justify-center space-y-2 animate-flipInX">
+            <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-10 w-10 text-[#8E54E9]"
+              >
+                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                <line x1="12" x2="12" y1="22" y2="15.5"></line>
+                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                <line x1="12" x2="12" y1="2" y2="8.5"></line>
+              </svg>
+            </div>
+            <p class="text-sm font-medium">Node.js</p>
+          </div>
+          <div class="flex flex-col items-center justify-center space-y-2 animate-flipInX">
+            <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-10 w-10 text-[#4776E6]"
+              >
+                <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                <line x1="9" x2="15" y1="20" y2="20"></line>
+                <line x1="12" x2="12" y1="4" y2="20"></line>
+              </svg>
+            </div>
+            <p class="text-sm font-medium">TypeScript</p>
+          </div>
+          <div class="flex flex-col items-center justify-center space-y-2 animate-flipInX">
+            <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-10 w-10 text-[#8E54E9]"
+              >
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                <path d="M3 12A9 3 0 0 0 21 12"></path>
+              </svg>
+            </div>
+            <p class="text-sm font-medium">MongoDB</p>
+          </div>
+          <div class="flex flex-col items-center justify-center space-y-2 animate-flipInX">
+            <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-10 w-10 text-[#4776E6]"
+              >
+                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                <line x1="12" x2="12" y1="22" y2="15.5"></line>
+                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                <line x1="12" x2="12" y1="2" y2="8.5"></line>
+              </svg>
+            </div>
+            <p class="text-sm font-medium">Next.js</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container space-y-12 px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl animate-fadeIn">Contact Me</h2>
+            <p class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 animate-fadeIn">
+              Feel free to reach out if you have any questions or opportunities.
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto w-full max-w-sm space-y-2 animate-fadeInUp">
+          <form class="flex flex-col space-y-4">
+            <input
+              class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1 bg-gray-100 border-none focus:ring-2 focus:ring-[#4776E6]"
+              placeholder="Name"
+              type="text"
+            />
+            <input
+              class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1 bg-gray-100 border-none focus:ring-2 focus:ring-[#8E54E9]"
+              placeholder="Email"
+              type="email"
+            />
+            <textarea
+              class="flex min-h-[80px] w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1 bg-gray-100 border-none focus:ring-2 focus:ring-[#4776E6]"
+              placeholder="Message"
+              rows="4"
+            ></textarea>
+            <button
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-10 px-4 py-2 self-end bg-gradient-to-r from-[#4776E6] to-[#8E54E9] text-white hover:opacity-90 transition-opacity"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gradient-to-r from-[#4776E6] to-[#8E54E9] text-white">
+    <p class="text-xs">© 2024 John Doe. All rights reserved.</p>
+    <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+      <a class="text-xs hover:underline underline-offset-4" href="#">
+        Terms of Service
+      </a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
